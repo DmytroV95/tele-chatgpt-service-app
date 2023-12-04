@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-admin-chat-history-table
+      author: Dmytro Varukha
+      changes:
+        - createTable:
+            tableName: admin_chat_conversation
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: telegram_chat_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: admin_id
+                  type: bigint
+              - column:
+                  name: message
+                  type: varchar(4096)
+              - column:
+                  name: message_time
+                  type: varchar(255)
+              - column:
+                  name: message_source
+                  type: varchar(255)

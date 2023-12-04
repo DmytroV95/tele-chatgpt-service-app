@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/Dockerfile" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/app-routing.module.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/app.component.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/app.component.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/app.component.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/app.module.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/dto" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/dto/telegram-message-request.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/dto/user-admin-chat-response.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/dto/user-login-request.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/dto/user-login-response.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/dto/user-register-request.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/dto/user-register-response.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service/authentication.service.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service/authorization-guard.service.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service/chat-state.service.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service/message.service.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service/telegram-messenger.service.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service/user-admin-chat.service.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/service/user.service.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-admin-chat" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-admin-chat/user-admin-chat.component.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-admin-chat/user-admin-chat.component.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-admin-chat/user-admin-chat.component.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-login" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-login/user-login.component.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-login/user-login.component.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-login/user-login.component.ts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-register" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-register/user-register.component.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-register/user-register.component.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tele-chatgpt-service-ui/src/app/user-register/user-register.component.ts" charset="windows-1251" />
+  </component>
+</project>

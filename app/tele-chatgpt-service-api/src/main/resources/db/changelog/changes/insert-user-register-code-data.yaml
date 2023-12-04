@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-user-register-code-data
+      author: Dmytro Varukha
+      changes:
+        - insert:
+            tableName: user_register_code
+            columns:
+              - column:
+                  name: register_code
+                  value: 'code1'
+              - column:
+                  name: is_used
+                  valueBoolean: false
+        - insert:
+            tableName: user_register_code
+            columns:
+              - column:
+                  name: register_code
+                  value: 'code2'
+              - column:
+                  name: is_used
+                  valueBoolean: false
+        - insert:
+            tableName: user_register_code
+            columns:
+              - column:
+                  name: register_code
+                  value: 'code3'
+              - column:
+                  name: is_used
+                  valueBoolean: false

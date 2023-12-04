@@ -1,0 +1,29 @@
+<body>
+<div class="container">
+    <div *ngIf="messages.length > 0" class="info-messages">
+        <div *ngFor="let message of messages">{{ message }}</div>
+    </div>
+    <div class="login form">
+        <header>Login</header>
+        <form (ngSubmit)="login()">
+            <input type="email"
+                   name="email-login"
+                   [(ngModel)]="loginRequest.email"
+                   placeholder="Enter your email"
+                   required>
+            <input type="password"
+                   name="password-login"
+                   [(ngModel)]="loginRequest.password"
+                   placeholder="Enter your password"
+                   required>
+            <input type="submit" class="button" value="Login">
+        </form>
+        <div class="signup">
+            <span class="signup">Don't have an account?</span>
+            <button type="button">
+                <a routerLink="/register">Sign Up</a>
+            </button>
+        </div>
+    </div>
+</div>
+</body>

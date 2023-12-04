@@ -1,0 +1,49 @@
+<body>
+<div class="container">
+    <div *ngIf="messages.length > 0" class="info-messages">
+        <div *ngFor="let message of messages">{{ message }}</div>
+    </div>
+    <div class="registration form">
+        <header>Sign Up</header>
+        <form (ngSubmit)="register()">
+            <input type="email"
+                   name="email-register"
+                   [(ngModel)]="registerRequest.email"
+                   placeholder="Enter your email"
+                   required>
+            <input type="password"
+                   name="password-register"
+                   [(ngModel)]="registerRequest.password"
+                   placeholder="Create a password"
+                   required>
+            <input type="password"
+                   name="repeatPassword-register"
+                   [(ngModel)]="registerRequest.repeatPassword"
+                   placeholder="Confirm your password"
+                   required>
+            <input type="text"
+                   name="firstName-register"
+                   [(ngModel)]="registerRequest.firstName"
+                   placeholder="Enter your first name"
+                   required>
+            <input type="text"
+                   name="lastName-register"
+                   [(ngModel)]="registerRequest.lastName"
+                   placeholder="Enter your last name"
+                   required>
+            <input type="password"
+                   name="register-code"
+                   [(ngModel)]="registerRequest.registerCode"
+                   placeholder="Enter your registration code"
+                   required>
+            <input type="submit" class="button" value="Sign Up">
+        </form>
+        <div class="signup">
+            <span class="signup">Already have an account?</span>
+            <button type="button">
+                <a routerLink="/login">Sign In</a>
+            </button>
+        </div>
+    </div>
+</div>
+</body>

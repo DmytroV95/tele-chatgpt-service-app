@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-user-register-code-table
+      author: Dmytro Varukha
+      changes:
+        - createTable:
+            tableName: user_register_code
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: register_code
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_used
+                  type: boolean
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false

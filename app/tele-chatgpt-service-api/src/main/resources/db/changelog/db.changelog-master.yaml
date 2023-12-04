@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/create-role-table.yaml
+  - include:
+      file: db/changelog/changes/create-users-table.yaml
+  - include:
+      file: db/changelog/changes/create-user-role-table.yaml
+  - include:
+      file: db/changelog/changes/insert-roles-to-role-table.yaml
+  - include:
+      file: db/changelog/changes/create-admin-chat-history-table.yaml
+  - include:
+      file: db/changelog/changes/create-user-register-code-table.yaml
+  - include:
+      file: db/changelog/changes/insert-user-register-code-data.yaml
