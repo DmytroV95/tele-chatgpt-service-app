@@ -11,6 +11,4 @@ public interface UserRegisterCodeRepository extends JpaRepository<UserRegisterCo
             + " AND c.registerCode = :providedCode")
     Optional<UserRegisterCode> findByIsUsedAndRegisterCode(boolean isUsed,
                                                            String providedCode);
-
-
 }

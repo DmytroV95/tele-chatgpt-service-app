@@ -1,8 +1,5 @@
 version: "3.8"
 
-volumes:
-  postgres_data:
-
 services:
   postgresdb:
     image: postgres
@@ -11,27 +8,30 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=root123
-      - POSTGRES_DB=tele_chatgpt_service_db_
+      - POSTGRES_DB=tele_chatgpt_service_db
     ports:
       - "5434:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 30s
       timeout: 30s
       retries: 3
 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   backend:
     depends_on:
       - postgresdb
     restart: on-failure
     build: app/tele-chatgpt-service-api
+
     ports:
       - "8088:8080"
       - "5005:5005"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresdb:5432/tele_chatgpt_service_db_
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresdb:5432/tele_chatgpt_service_db?serverTimezone=UTC
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=root123
       - SPRING_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
@@ -44,3 +44,6 @@ services:
     build: app/tele-chatgpt-service-ui
     ports:
       - "4200:4200"
+
+volumes:
+  postgres_data:

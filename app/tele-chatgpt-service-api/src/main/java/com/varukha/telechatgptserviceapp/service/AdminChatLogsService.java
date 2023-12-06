@@ -11,6 +11,5 @@ public interface AdminChatLogsService {
     List<ChatLogsResponseDto> getUserAdminChatLogsById(Long id);
 
     AdminChatHistory createUserAdminChatHistory(Long chatId,
-                                                String message,
-                                                Role.RoleName messageSource);
+                                                String message,Role.RoleName messageSource);
 }

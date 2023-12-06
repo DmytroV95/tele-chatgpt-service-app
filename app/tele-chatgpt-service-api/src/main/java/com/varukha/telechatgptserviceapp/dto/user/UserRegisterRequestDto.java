@@ -27,5 +27,4 @@ public class UserRegisterRequestDto {
     private String lastName;
     @NotEmpty
     private String registerCode;
-
 }
