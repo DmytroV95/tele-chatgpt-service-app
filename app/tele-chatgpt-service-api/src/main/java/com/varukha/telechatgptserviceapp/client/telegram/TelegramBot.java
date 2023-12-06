@@ -70,7 +70,6 @@ public class TelegramBot extends TelegramLongPollingBot {
                 handleChatMode(chatId, messageText);
             } else if (isHandleMessageToAdmin(messageText)) {
                 handleChatMode(chatId, messageText);
-
             } else {
                 handleDefaultCommands(chatId, messageText);
             }

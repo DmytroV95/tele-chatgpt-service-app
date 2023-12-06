@@ -25,7 +25,8 @@ public class ChatLogsController {
     @GetMapping()
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @Operation(summary = "Get all chat logs",
-            description = "Get list of all chats between customer and admin")
+            description = "Get list of all chats between"
+                    + " customer and admin for current user id")
     public List<ChatLogsResponseDto> getAllChatLogs() {
         return adminChatLogsService.getAllUserAdminChatLogs();
     }
